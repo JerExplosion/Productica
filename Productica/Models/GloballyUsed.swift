@@ -12,6 +12,7 @@ struct GloballyUsed {
     static let TDVCcellID = "TDVCcelloID"
     static let uDefaultsKey = "TDkey"
     static let burgerMenuImage = "64pixelsBPthreeBurgers.png"
+    static let cstCelloID = "celloAsUsual"
 }
 
 extension TDViewController {

@@ -22,6 +22,8 @@
 		8F88D91A244946BE00954EAB /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88D919244946BE00954EAB /* ContainerViewController.swift */; };
 		8F88D91C2449494800954EAB /* SideMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88D91B2449494800954EAB /* SideMenuTableVC.swift */; };
 		8F88D91E2449533100954EAB /* MajorViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88D91D2449533100954EAB /* MajorViewC.swift */; };
+		8FA3374C245A0150001A7DAD /* CstTviCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3374B245A0150001A7DAD /* CstTviCell.swift */; };
+		8FA33750245A0341001A7DAD /* CstEloViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3374F245A0341001A7DAD /* CstEloViewC.swift */; };
 		8FB25FFB2452159800370E98 /* CustomizedSegueTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB25FFA2452159800370E98 /* CustomizedSegueTransitions.swift */; };
 		8FB8F5F0244B75D700EAA5B6 /* BeachViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB8F5EF244B75D700EAA5B6 /* BeachViewC.swift */; };
 		8FFE7B4024413EDF00559268 /* PersistenceRelevant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFE7B3F24413EDF00559268 /* PersistenceRelevant.swift */; };
@@ -45,6 +47,8 @@
 		8F88D919244946BE00954EAB /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		8F88D91B2449494800954EAB /* SideMenuTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableVC.swift; sourceTree = "<group>"; };
 		8F88D91D2449533100954EAB /* MajorViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorViewC.swift; sourceTree = "<group>"; };
+		8FA3374B245A0150001A7DAD /* CstTviCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CstTviCell.swift; sourceTree = "<group>"; };
+		8FA3374F245A0341001A7DAD /* CstEloViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CstEloViewC.swift; sourceTree = "<group>"; };
 		8FB25FFA2452159800370E98 /* CustomizedSegueTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedSegueTransitions.swift; sourceTree = "<group>"; };
 		8FB8F5EF244B75D700EAA5B6 /* BeachViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachViewC.swift; sourceTree = "<group>"; };
 		8FFE7B3F24413EDF00559268 /* PersistenceRelevant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceRelevant.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 				8FB25FFA2452159800370E98 /* CustomizedSegueTransitions.swift */,
 				8F0630BE244BBACB00D37C91 /* TDtableViewCell.swift */,
 				8F5A87C7244E05DF00CBC9F0 /* CustomTextField.swift */,
+				8FA3374B245A0150001A7DAD /* CstTviCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -80,6 +85,7 @@
 				8F88D91B2449494800954EAB /* SideMenuTableVC.swift */,
 				8F88D91D2449533100954EAB /* MajorViewC.swift */,
 				8FB8F5EF244B75D700EAA5B6 /* BeachViewC.swift */,
+				8FA3374F245A0341001A7DAD /* CstEloViewC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,12 +230,14 @@
 			files = (
 				8FB25FFB2452159800370E98 /* CustomizedSegueTransitions.swift in Sources */,
 				8F5A87C8244E05DF00CBC9F0 /* CustomTextField.swift in Sources */,
+				8FA33750245A0341001A7DAD /* CstEloViewC.swift in Sources */,
 				8F53CEAF244232480083CD8F /* ObjectsModel.swift in Sources */,
 				8F6C96B2243FB665003D3BB2 /* GloballyUsed.swift in Sources */,
 				8F6C969C243FB21B003D3BB2 /* AppDelegate.swift in Sources */,
 				8F6C96B0243FB5A0003D3BB2 /* TDViewController.swift in Sources */,
 				8FB8F5F0244B75D700EAA5B6 /* BeachViewC.swift in Sources */,
 				8F3CBC022448D8AC007F3CDD /* TableOperations.swift in Sources */,
+				8FA3374C245A0150001A7DAD /* CstTviCell.swift in Sources */,
 				8F88D91C2449494800954EAB /* SideMenuTableVC.swift in Sources */,
 				8FFE7B4024413EDF00559268 /* PersistenceRelevant.swift in Sources */,
 				8F53CEB2244232DF0083CD8F /* CoreDataModel.xcdatamodeld in Sources */,

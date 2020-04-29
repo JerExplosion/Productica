@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KT6-GO-LAK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rtz-8w-OA4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -59,6 +59,87 @@
             </objects>
             <point key="canvasLocation" x="1768.1159420289857" y="140.625"/>
         </scene>
+        <!--Cst Elo ViewC-->
+        <scene sceneID="Dm6-SF-jsV">
+            <objects>
+                <viewController id="Rtz-8w-OA4" customClass="CstEloViewC" customModule="Productica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B7E-lk-3Fe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PiD-iK-UtD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celloAsUsual" id="tt8-0O-gKE" customClass="CstTviCell" customModule="Productica" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tt8-0O-gKE" id="Mon-Pd-SGq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQN-0L-aIJ">
+                                                    <rect key="frame" x="11" y="6" width="392" height="88"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carribean" translatesAutoresizingMaskIntoConstraints="NO" id="b7s-Ae-kwq">
+                                                            <rect key="frame" x="0.0" y="4" width="80" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="80" id="24X-zl-ewD"/>
+                                                                <constraint firstAttribute="width" constant="80" id="cMB-PE-KeA"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carribean" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcZ-Nn-iwA">
+                                                            <rect key="frame" x="90" y="20" width="292" height="48"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="GcZ-Nn-iwA" firstAttribute="top" secondItem="pQN-0L-aIJ" secondAttribute="top" constant="20" id="A9O-du-CdT"/>
+                                                        <constraint firstItem="GcZ-Nn-iwA" firstAttribute="leading" secondItem="b7s-Ae-kwq" secondAttribute="trailing" constant="10" id="MGv-Pj-z5o"/>
+                                                        <constraint firstItem="b7s-Ae-kwq" firstAttribute="centerY" secondItem="pQN-0L-aIJ" secondAttribute="centerY" id="Z5U-S0-jLk"/>
+                                                        <constraint firstItem="b7s-Ae-kwq" firstAttribute="leading" secondItem="pQN-0L-aIJ" secondAttribute="leading" id="h73-Hl-KXG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GcZ-Nn-iwA" secondAttribute="bottom" constant="20" id="kyl-kY-yuN"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GcZ-Nn-iwA" secondAttribute="trailing" constant="10" id="pNT-Hp-ASg"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pQN-0L-aIJ" firstAttribute="top" secondItem="Mon-Pd-SGq" secondAttribute="top" constant="6" id="Oct-rk-Bnc"/>
+                                                <constraint firstAttribute="bottom" secondItem="pQN-0L-aIJ" secondAttribute="bottom" constant="6" id="dG7-7O-hWN"/>
+                                                <constraint firstItem="pQN-0L-aIJ" firstAttribute="leading" secondItem="Mon-Pd-SGq" secondAttribute="leading" constant="11" id="oVq-kl-kN5"/>
+                                                <constraint firstAttribute="trailing" secondItem="pQN-0L-aIJ" secondAttribute="trailing" constant="11" id="oaN-ra-4Dy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cstCelloImage" destination="b7s-Ae-kwq" id="6Q1-PL-mm0"/>
+                                            <outlet property="cstCelloRabel" destination="GcZ-Nn-iwA" id="3J2-3x-nkX"/>
+                                            <outlet property="cstCelloView" destination="pQN-0L-aIJ" id="0pM-Eq-b8x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AxW-aW-uto" firstAttribute="trailing" secondItem="PiD-iK-UtD" secondAttribute="trailing" id="5t1-tX-oV2"/>
+                            <constraint firstItem="PiD-iK-UtD" firstAttribute="leading" secondItem="AxW-aW-uto" secondAttribute="leading" id="Ox2-PF-B8X"/>
+                            <constraint firstItem="PiD-iK-UtD" firstAttribute="top" secondItem="AxW-aW-uto" secondAttribute="top" id="rUG-Qi-Eca"/>
+                            <constraint firstItem="AxW-aW-uto" firstAttribute="bottom" secondItem="PiD-iK-UtD" secondAttribute="bottom" id="uCI-09-J31"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AxW-aW-uto"/>
+                    </view>
+                    <connections>
+                        <outlet property="cstEloTableV" destination="PiD-iK-UtD" id="HSs-XN-zzr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZA-mv-1E7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3302.898550724638" y="438.61607142857139"/>
+        </scene>
         <!--Container View Controller-->
         <scene sceneID="Rac-Or-6Bk">
             <objects>
@@ -109,7 +190,7 @@
             <objects>
                 <tableViewController id="yV8-TT-Fa2" customClass="SideMenuTableVC" customModule="Productica" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Rds-WS-wHk">
-                        <rect key="frame" x="0.0" y="0.0" width="267" height="703"/>
+                        <rect key="frame" x="0.0" y="0.0" width="267" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection headerTitle="Touo" id="nat-S0-QJb">
@@ -341,7 +422,7 @@
             <objects>
                 <viewController id="iVm-58-Yml" customClass="MajorViewC" customModule="Productica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eud-8g-EMo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhonePinkBeachWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Mc7-Z9-a7D">
@@ -392,7 +473,7 @@
             <objects>
                 <viewController id="xTa-lq-9Om" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lwa-Dh-Xge">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhonePinkBeachWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="mTU-d2-FcL">
@@ -400,7 +481,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQM-oC-p3N">
-                                <rect key="frame" x="79.5" y="-13.5" width="255" height="730"/>
+                                <rect key="frame" x="79.5" y="56" width="255" height="730"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="J85-GW-zFV">
                                     <rect key="frame" x="0.0" y="0.0" width="255" height="730"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,9 +535,10 @@
     </scenes>
     <resources>
         <image name="64pixelsBPthreeBurgers" width="64" height="64"/>
+        <image name="Carribean" width="187" height="187"/>
         <image name="iPhonePinkBeachWallpaper" width="777" height="1377"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TUa-m1-aUt"/>
+        <segue reference="0xh-0j-ptG"/>
     </inferredMetricsTieBreakers>
 </document>
