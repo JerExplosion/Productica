@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol WorkNetProtocol {
+    func sending(urlRequest: URLRequest, completion: (Result<Data, Error>)->Void)
+}
+
+// class WorkNet { }   (coming soon)
+

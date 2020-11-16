@@ -42,8 +42,8 @@
 		8F6B936E255F336100A22086 /* AppearanceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B936D255F336100A22086 /* AppearanceDependencies.swift */; };
 		8F6B936F255F336100A22086 /* AppearanceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B936D255F336100A22086 /* AppearanceDependencies.swift */; };
 		8F6B9373255F336500A22086 /* NewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B935C255F30A000A22086 /* NewDetailsViewController.swift */; };
-		8F76594C255F6E5F00E0B4A8 /* Atarashi Uno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F76594B255F6E5F00E0B4A8 /* Atarashi Uno.swift */; };
-		8F76594D255F6E5F00E0B4A8 /* Atarashi Uno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F76594B255F6E5F00E0B4A8 /* Atarashi Uno.swift */; };
+		8F76594C255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F76594B255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift */; };
+		8F76594D255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F76594B255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift */; };
 		8F765952255F6E7000E0B4A8 /* Atarashi Dos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F765951255F6E7000E0B4A8 /* Atarashi Dos.swift */; };
 		8F765953255F6E7000E0B4A8 /* Atarashi Dos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F765951255F6E7000E0B4A8 /* Atarashi Dos.swift */; };
 		8F7FF9A62560EC0300042B71 /* RequestableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FF9A52560EC0300042B71 /* RequestableProtocol.swift */; };
@@ -110,7 +110,7 @@
 		529E78EF255361D800FFB90B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8F6B935C255F30A000A22086 /* NewDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDetailsViewController.swift; sourceTree = "<group>"; };
 		8F6B936D255F336100A22086 /* AppearanceDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceDependencies.swift; sourceTree = "<group>"; };
-		8F76594B255F6E5F00E0B4A8 /* Atarashi Uno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atarashi Uno.swift"; sourceTree = "<group>"; };
+		8F76594B255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloballyAppliedNetworkingConstants.swift; sourceTree = "<group>"; };
 		8F765951255F6E7000E0B4A8 /* Atarashi Dos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atarashi Dos.swift"; sourceTree = "<group>"; };
 		8F7FF9A52560EC0300042B71 /* RequestableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestableProtocol.swift; sourceTree = "<group>"; };
 		8F7FF9AB2560EC1E00042B71 /* GeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeRequest.swift; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 		8F7FF9B72560EC7200042B71 /* 虚张声势 */ = {
 			isa = PBXGroup;
 			children = (
-				8F76594B255F6E5F00E0B4A8 /* Atarashi Uno.swift */,
+				8F76594B255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift */,
 				8F765951255F6E7000E0B4A8 /* Atarashi Dos.swift */,
 				8F7FF9A52560EC0300042B71 /* RequestableProtocol.swift */,
 				8F7FF9AB2560EC1E00042B71 /* GeRequest.swift */,
@@ -592,7 +592,7 @@
 				528ECABF25549CED00050CD1 /* NowPlayingModel.swift in Sources */,
 				8F6B936E255F336100A22086 /* AppearanceDependencies.swift in Sources */,
 				8F7FF9A62560EC0300042B71 /* RequestableProtocol.swift in Sources */,
-				8F76594C255F6E5F00E0B4A8 /* Atarashi Uno.swift in Sources */,
+				8F76594C255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift in Sources */,
 				8FA849B5255F07DD00843E7B /* ModifiedModelsCollection.swift in Sources */,
 				528ECAC925549D1000050CD1 /* DetailModel.swift in Sources */,
 				92AAC01A23B126A80069BD33 /* ViewControllerModified.swift in Sources */,
@@ -648,7 +648,7 @@
 				528ECBD125550DB300050CD1 /* PopularModel.swift in Sources */,
 				528ECBF525550DD800050CD1 /* Extensions.swift in Sources */,
 				528ECBDD25550DBD00050CD1 /* PopularVM.swift in Sources */,
-				8F76594D255F6E5F00E0B4A8 /* Atarashi Uno.swift in Sources */,
+				8F76594D255F6E5F00E0B4A8 /* GloballyAppliedNetworkingConstants.swift in Sources */,
 				528ECBE925550DCC00050CD1 /* DetailViewController.swift in Sources */,
 				8F7FF9AD2560EC1E00042B71 /* GeRequest.swift in Sources */,
 				528ECBCD25550DB000050CD1 /* NowPlayingModel.swift in Sources */,

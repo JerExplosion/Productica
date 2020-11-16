@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+protocol RequestabilityProtocol {
+    func urlRequestGenerator() -> URLRequest
+}
+
+extension URLRequest: RequestabilityProtocol {
+    func urlRequestGenerator() -> URLRequest {
+        return self
+    }
+}
+    
