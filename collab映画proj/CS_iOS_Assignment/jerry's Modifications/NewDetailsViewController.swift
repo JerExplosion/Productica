@@ -15,14 +15,8 @@ class NewDetailsViewController: UIViewController {
     @IBOutlet weak var movieNameLabel: UILabel!
     @IBOutlet weak var descriptionsLabel: UILabel!
     @IBOutlet weak var dateTimeLabel: UILabel!
+    @IBOutlet weak var descriptionsTextview: UITextView!
     
-    let detailsViewModel = DetailsVM.init()
-    //
-    var genres: [Genre]?
-    var genreLabels: [UILabel] = []
-    //
-    var idNumb: Int?
-                         
     override func viewDidLoad() {
         super.viewDidLoad()
         userinterfaceSetup()
@@ -30,32 +24,33 @@ class NewDetailsViewController: UIViewController {
     }
     
     private func gettingDetails() {
-        let detailsURLString = detailStartingURL + "\(idNumb ?? 0)" + apiKey
-  //      let detailsURLString = GloballyApplied.detailStartingURL + "\(idNumb ?? 0)" + GloballyApplied.apiKey
-        print(detailsURLString)
-        
-        detailsViewModel.getDetail(urlString: detailsURLString) {
+        let detailsURLString = GloballyApplied.detailStartingURL + "\(idNumb ?? 0)" + GloballyApplied.apiKey
 
+        detailsViewModel.getDetail(urlString: detailsURLString) {
             let details = self.detailsViewModel.getDetailResult()
             self.movieNameLabel.text = details?.title
-            guard let date = details?.release_date else { return }
             guard let runtime = details?.runtime else { return }
+            guard let date = details?.release_date else { return }
             self.dateTimeLabel.text = date.formatDate(dateString: date) + " - " + runtime.formatTime(timeInt: runtime)
             self.descriptionsLabel.text = details?.overview
+            self.descriptionsTextview.text = details?.overview
             self.genres = details?.genres
-       //     self.setUpGenre()
-
             guard let imagePath = details?.poster_path else { return }
             self.imageDownloader(imagePath: imagePath)
         }
     }
+    let detailsViewModel = DetailsVM.init()
+    var genres: [Genre]?
+    var genreLabels: [UILabel]?
+    var idNumb: Int?
     
     fileprivate func userinterfaceSetup() {
         newMoviesDetailsImageView.layer.masksToBounds = true
         newMoviesDetailsImageView.layer.cornerRadius = 30
-        descriptionsLabel.numberOfLines = 0 
+        descriptionsLabel.numberOfLines = 0
         view.alpha = 01_
         view.backgroundColor = .clear
+        descriptionsLabel.isHidden = true
     }
     
     private func imageDownloader(imagePath: String) {
@@ -67,5 +62,4 @@ class NewDetailsViewController: UIViewController {
     @IBAction func backHome(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
 }

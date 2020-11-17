@@ -9,14 +9,18 @@
 import MBProgressHUD
 import UIKit
 
-class ViewControllerModified: UIViewController,UITableViewDataSource {
+class ViewControllerModified: UIViewController,UITableViewDataSource, UIScrollViewDelegate {
   
     let movieService = MovieService.init()
     let popularVM = PopularVM.init() 
   
   @IBOutlet weak var moviesTableView: UITableView!
   @IBOutlet weak var moviesCollectionView: UICollectionView!
-  
+    @IBOutlet weak var horizontalImageScroller: UIScrollView!
+     
+   var imgScrollerframe = CGRect(x: 0, y: 0, width: 0, height: 0)
+   var imgArrayForScroller = [UIImage]()
+           
   override func viewDidLoad() {
     super.viewDidLoad()
     let title = UILabel()
@@ -24,6 +28,8 @@ class ViewControllerModified: UIViewController,UITableViewDataSource {
     title.font = .boldSystemFont(ofSize: 21)
     title.textColor = .white 
     navigationItem.titleView = title
+       
+    horizontalImageScrollerSetup()
     
     // MARK: - additions & modifications
     
@@ -38,7 +44,6 @@ class ViewControllerModified: UIViewController,UITableViewDataSource {
 
     movieService.fetchMovies {
       self.moviesCollectionView.reloadData()
-        // don't forget to reload
     }
     
     getData()

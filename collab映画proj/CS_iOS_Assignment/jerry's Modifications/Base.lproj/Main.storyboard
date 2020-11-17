@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-pE-qpw">
-                                <rect key="frame" x="0.0" y="280" width="414" height="616"/>
+                                <rect key="frame" x="0.0" y="520" width="414" height="376"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="iEH-Fk-SRL" customClass="MovieCell" customModule="CS_iOS_Assignment" customModuleProvider="target">
@@ -153,11 +153,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most popular" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsI-ce-lfM">
-                                <rect key="frame" x="0.0" y="258" width="414" height="17"/>
+                                <rect key="frame" x="0.0" y="498" width="414" height="17"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5dB-QD-QzV">
+                                <rect key="frame" x="38" y="275" width="338" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Hfu-N6-Ey2"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="BRM-qZ-gr2"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -165,7 +171,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LsI-ce-lfM" secondAttribute="trailing" id="1Ui-oL-8vX"/>
                             <constraint firstItem="v0k-pE-qpw" firstAttribute="top" secondItem="LsI-ce-lfM" secondAttribute="bottom" constant="5" id="5XY-YQ-M4c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3qo-QO-Fyz" secondAttribute="trailing" id="B3x-sr-gth"/>
-                            <constraint firstItem="LsI-ce-lfM" firstAttribute="top" secondItem="aEI-tN-AhH" secondAttribute="bottom" constant="10" id="EBI-3r-s3S"/>
+                            <constraint firstItem="LsI-ce-lfM" firstAttribute="top" secondItem="aEI-tN-AhH" secondAttribute="bottom" constant="250" id="EBI-3r-s3S"/>
                             <constraint firstItem="aEI-tN-AhH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OGr-PP-6Co"/>
                             <constraint firstItem="v0k-pE-qpw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V8D-mB-WvD"/>
                             <constraint firstItem="LsI-ce-lfM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZpU-FJ-3rC"/>
@@ -179,6 +185,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="MoviesBox" id="Ncc-aH-tpW"/>
                     <connections>
+                        <outlet property="horizontalImageScroller" destination="5dB-QD-QzV" id="8Kx-d2-BFg"/>
                         <outlet property="moviesCollectionView" destination="aEI-tN-AhH" id="EoV-Ch-thz"/>
                         <outlet property="moviesTableView" destination="v0k-pE-qpw" id="4W8-be-ZRD"/>
                     </connections>
@@ -208,28 +215,13 @@
                                             <action selector="backHome:" destination="1tr-vu-cww" eventType="touchUpInside" id="N3w-13-Wup"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifa-i2-miv">
-                                        <rect key="frame" x="50" y="866" width="326" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Lights is blinding, girls need blinders
-So they can step out of bounds quick, the side lines is
-Lined with casualties who sip the life casually
-Then gradually become worse – don't bite the apple, Eve!
-Caught up in the in-crowd, now you're in-style
-Into the winter gets cold, en vogue with your skin out
-City of sin is a pity on a whim
-Good girls gone bad, the city's filled with them</string>
-                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-g7-ppW">
                                         <rect key="frame" x="45.5" y="547" width="328" height="200"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="2Fo-0h-Rhg"/>
                                         </constraints>
-                                        <mutableString key="text">Lights is blinding, girls need blinders
+                                        <string key="text">Lights is blinding, girls need blinders
 So they can step out of bounds quick, the side lines is
 Lined with casualties who sip the life casually
 Then gradually become worse – don't bite the apple, Eve!
@@ -238,7 +230,7 @@ Into the winter gets cold, en vogue with your skin out
 City of sin is a pity on a whim
 Good girls gone bad, the city's filled with them                                 protocol WorkNetProtocol {
     func sending(urlRequest: URLRequest, completion: (Result&lt;Data, Error&gt;)-&gt;Void)
-}    </mutableString>
+}    </string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -249,6 +241,21 @@ Good girls gone bad, the city's filled with them                                
                                             <constraint firstAttribute="height" constant="63" id="CEw-kq-hDy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifa-i2-miv">
+                                        <rect key="frame" x="50" y="776" width="326" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Lights is blinding, girls need blinders
+So they can step out of bounds quick, the side lines is
+Lined with casualties who sip the life casually
+Then gradually become worse – don't bite the apple, Eve!
+Caught up in the in-crowd, now you're in-style
+Into the winter gets cold, en vogue with your skin out
+City of sin is a pity on a whim
+Good girls gone bad, the city's filled with them</string>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -319,6 +326,7 @@ Good girls gone bad, the city's filled with them                                
                     <connections>
                         <outlet property="dateTimeLabel" destination="WTW-uW-7pj" id="owe-iJ-brW"/>
                         <outlet property="descriptionsLabel" destination="ifa-i2-miv" id="2W4-EN-eY0"/>
+                        <outlet property="descriptionsTextview" destination="M9u-g7-ppW" id="hJu-cM-mQe"/>
                         <outlet property="movieNameLabel" destination="Hpn-Em-fZA" id="VLZ-Ai-iUa"/>
                         <outlet property="newMoviesDetailsImageView" destination="7PS-Al-Kfp" id="a76-iY-134"/>
                     </connections>

@@ -16,6 +16,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
     let posterPath = movie.poster_path
     let urlString = dowloadURL + posterPath
     guard let url = URL(string: urlString) else { return }
+    print(url, "sd_setImage")
     poster.sd_setImage(with: url, placeholderImage: nil, options: [], context: nil)
   }
   
